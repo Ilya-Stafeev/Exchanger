@@ -1,0 +1,84 @@
+.services-part{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--background-color2);
+    
+    .container{
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .heading{
+            margin-bottom: 50px;
+            text-align: center;            
+
+            .title{
+                font-family: "Inter";
+                font-style: normal;
+                font-size: 48px;
+                line-height: 65px;
+                font-weight: 600;
+                color: var(--title-color);
+                margin-bottom: 30px;
+            }
+
+            .subtitle{            
+                font-family: "Inter";
+                font-style: normal;   
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 400;
+                color: var(--text-color);
+                margin-bottom: 60px;
+            }
+        }
+
+        .row{
+            display: flex;        
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+
+            .services-part{           
+                width: 25%;
+                padding: 0 15px;
+                margin-bottom: 30px;
+
+                .services-cart{
+                    background: var(--background-color);
+                    border-color: #23262f;
+                    box-shadow: var(--box-shadow-cart);
+                    padding: 30px 25px;
+                    border-radius: 10px;
+                    height: 100%;                    
+
+                    .img-service{
+                        margin-bottom: 30px;
+                    }
+
+                    .service-content{
+                        font-family: "Inter";
+                        font-style: normal;  
+
+                        .service-title{
+                            font-size: 19px;
+                            line-height: 23px;                           
+                            margin-bottom: 10px;
+                            font-weight: 500;
+                            color: var(--title-color);
+                        }
+
+                        .service-subtitle{
+                            color: #9295A6;
+                            font-size: 18px;
+                            line-height: 24px; 
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

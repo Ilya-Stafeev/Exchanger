@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;  
+  }
+  
+  // Стили полосы прокрутки
+  ::-webkit-scrollbar {
+    background: transparent;
+    width: 3px;
+    height: 6px;
+  }
+  
+  // Стили ползунка прокрутки
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.07);
+    border: solid rgba(88, 88, 88, 0.12) 2px;
+    border-radius: 5px;
+  }
+  
+  // Стили трека прокрутки
+  ::-webkit-scrollbar-track {
+    background-color: transparent;; // цвет трека
+  }
+  
+  /* dark theme */
+  html[data-theme='dark-mode']{
+    --background-color:#080808;// Стиль для основного фона
+    --text-color:#fff;//Стиль для сылок и мелкого текста  
+    --title-color:#fff;//Стиль для заголовков и крупного текста
+    --border-taggle-color:#fff;
+    --background-navbar-collapse: #000;
+    --color-Price-Tables:#fff;//Цвет текста некоторых элиментов в Price-Tables
+    --background-button-mobail: #1d528b;//Цвет фона кнопок при нажатии
+    --background-color2: #121318;//Цвет второстепенного фона
+    --background-border-block: #23262f;//Цвет границы для блоков
+    --color-cart-title: #fff;//Цвет заголовка в карточках
+    --color-cart-abb: #fff;//Цвет абривеатуры монет
+    --background-cart-abb: #080808;//Цвет фона абривеатуры монет
+    --background-on-hover:#080808;//Цвет при навидении на блок
+    --image-filter: brightness(0) invert(1);;//Изменение цвета изображений партнеров
+    --box-shadow-cart:0px 20.2977px 62.72px rgba(4, 4, 4, 0.172525), 
+                      0px 10.8521px 33.5331px rgba(4, 4, 4, 0.143066), 
+                      0px 6.08362px 18.7984px rgba(4, 4, 4, 0.12), 
+                      0px 3.23097px 9.98369px rgba(4, 4, 4, 0.0969343),
+                      0px 1.34448px 4.15444px rgba(4, 4, 4, 0.0674749);//box-shadow для карточек
+    --growth-indicator:#fff;//Индикатор роста
+    --drop-indicator:#fff;//Индикатор падения
+    --zero-indicator:#fff;//Индикатор при 0
+  }
+  
+  /* light theme */
+  html[data-theme='light-mode']{
+    --background-color:#fff;// Стиль для основного фона
+    --text-color:#545766; //Стиль для сылок и мелкого текста
+    --title-color:#090A0D;//Стиль для заголовков и крупного текста
+    --border-taggle-color:#080808;
+    --background-navbar-collapse: #fff;
+    --color-Price-Tables:#212529;//Цвет текста некоторых элиментов в Price-Tables
+    --background-button-mobail: #8ac8ff;//Цвет фона кнопок при нажатии
+    --background-color2: #F4F9FC;//Цвет второстепенного фона
+    --background-border-block: #F0F1F5;//Цвет границы для блоков  
+    --color-cart-title: #2B3144;//Цвет заголовка в карточках
+    --color-cart-abb: #0083F8;//Цвет абривеатуры монет
+    --background-cart-abb: #E9EAF0;//Цвет фона абривеатуры монет
+    --background-on-hover:#FEF2F2;//Цвет при навидении на блок
+    --image-filter: contrast(1);//Изменение цвета изображений партнеров
+    --box-shadow-cart:0px 20.2977px 62.72px rgba(210, 208, 225, 0.172525), 
+                      0px 10.8521px 33.5331px rgba(210, 208, 225, 0.143066), 
+                      0px 6.08362px 18.7984px rgba(210, 208, 225, 0.12), 
+                      0px 3.23097px 9.98369px rgba(210, 208, 225, 0.0969343), 
+                      0px 1.34448px 4.15444px rgba(210, 208, 225, 0.0674749);//box-shadow для карточек
+    --growth-indicator:#03a56c;//Индикатор роста
+    --drop-indicator:red;//Индикатор падения
+    --zero-indicator:black;//Индикатор при 0
+  }
+  
+  .green {
+    color: var(--growth-indicator);//Индикатор роста
+  }
+  
+  .red {
+    color: var(--drop-indicator);//Индикатор падения
+  }
+  
+  .green1 {
+    color: #03a56c;//Индикатор роста для Price_tables
+  }
+  
+  .red1 {
+    color: red;//Индикатор падения роста для Price_tables
+  }
+
+  .black {
+    color: var(--zero-indicator);//Индикатор при 0
+  }
+
+  .rud{
+    height: 1000px;
+  }
+  
+  
+  
+  
+  
+  
+  
+    

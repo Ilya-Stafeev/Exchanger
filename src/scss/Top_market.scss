@@ -1,0 +1,134 @@
+.top_market{
+    padding: 100px 0;
+    background: var(--background-color);
+
+    .container {
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
+
+        .top-market_title{
+            font-family: "Inter";
+            font-style: normal;
+            font-size: 48px;
+            line-height: 65px;
+            font-weight: 600;
+            color: var(--title-color);
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .rows{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .row{
+                position: relative;
+                width: 25%;
+                padding-right: 15px;
+                padding-left: 15px;
+
+                .card{
+                    border: 1px solid var(--background-border-block);
+                    padding: 20px;
+                    background: var(--background-color2);
+                    border-radius: 15px;
+                    box-shadow: var(--box-shadow-cart);
+                    position: relative;    
+                    display: flex;                    
+                    flex-direction: column;
+                    min-width: 0;
+
+                    .card_header{
+                        height: 50px;
+                        background: none;
+                        padding: 0;
+                        border-bottom: 0;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 0;
+
+                        .card_icon{
+                            width: 50px;
+                            height: 50px;    
+                            font-size: 50px;                        
+                            margin-right: 15px;                            
+                            background-size: cover;
+                            box-sizing: border-box;
+                        }
+
+                        .icon-btc{
+                            background: url(../assets/btc.svg) no-repeat;
+                        }
+
+                        .icon-eth{
+                            background: url(../assets/eth.svg) no-repeat;
+                        }
+
+                        .icon-bch{
+                            background: url(../assets/bch.svg) no-repeat;
+                        }
+
+                        .icon-ltc{
+                            background: url(../assets/ltc.svg) no-repeat;
+                        }
+
+                        .full_name{
+                            color: var(--color-cart-title);
+                            margin-right: 15px;                            
+                            font-weight: 400;
+                            font-size: 23px;
+                            line-height: 28px;
+                            font-family: "Inter";
+                            font-style: normal;
+                        }
+
+                        .abb_name{
+                            background: var(--background-cart-abb);
+                            border-radius: 5px;
+                            padding: 5px 15px;
+                            color: var(--color-cart-abb);
+                            font-family: "Inter";
+                            font-style: normal;
+                        }
+                    }
+
+                    .card_body{
+                        padding: 0;
+                        margin-top: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex: 1 1 auto;
+
+                        .price{
+                            width: 115px;
+                            font-family: "Inter";
+                            font-size: 28px;
+                            line-height: 34px;
+                            margin: 0;
+                            margin-right: 10px;
+                            font-weight: 500;
+                            white-space: nowrap;
+                            color: var(--title-color);
+                        }
+
+                        .changes{
+                            display: flex;
+                            font-family: "Inter";
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 24px;
+
+                            img{
+                                margin-left: 3px;
+                            }                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

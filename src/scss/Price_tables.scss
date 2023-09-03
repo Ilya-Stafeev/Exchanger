@@ -1,0 +1,159 @@
+
+.price-tables{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--background-color2);
+
+    .container {
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .heading{                        
+            text-align: center;
+
+            .main_title{
+                color: var(--title-color);
+                font-size: 60px;
+                line-height: 72px;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 700;
+                margin-top: 0;
+                margin-bottom: 0.5rem;
+            }
+
+            .main-text{
+                font-family: "Inter", sans-serif;
+                color: var(--text-color);
+                font-size: 20px;
+                line-height: 26px;
+                font-weight: 400;
+            }
+        }
+        .list-pading{
+            padding-right: 15px;
+            padding-left: 15px;
+            max-width: 100%;
+
+            .list-block{
+                padding: 40px 0;
+                transition: 0.3s all ease-in-out;
+                overflow: auto;
+                position: relative;                          
+                align-items: center;          
+
+                .currency-table{
+                    text-align: center;
+                    width: 100%;
+                    overflow: visible;
+                    border-collapse: collapse;
+
+                    thead{                    
+                        tr{   
+                            font-family: "Inter", sans-serif;
+                            color: var(--text-color);                    
+                            border-top: 1px solid #EFEFEF;
+                            border-bottom: 1px solid #EFEFEF;
+
+                            th{
+                                transition: all 0.3s ease-in-out;
+                                padding: 20px;
+                                font-size: 14px;
+                                line-height: 17px;
+                                font-weight: 400;
+                                text-align: left;
+                            }
+
+                            .number-cell{                            
+                                width: 4%;
+                            }
+
+                            .currency-name-cell{
+                                width: 19%;
+                            }
+
+                            .last-price-cell{
+                                width: 18%;
+                            }
+
+                            .changes-h-cell{
+                                width: 19%;
+                            }
+
+                            .market-cap-cell{
+                                width: 19%;
+                            }
+
+                            .nothing{
+                                width: 21%;
+                            }
+                        }
+                    }
+
+                    tbody{
+                        tr{     
+                            font-family: "Inter", sans-serif;                                                 
+                            border-radius: 12px;
+                            height: 102px;
+                            vertical-align: middle;
+
+                            &:hover {
+                                background-color: var(--background-on-hover);
+                            }
+
+                            td{
+                                color: var(--color-Price-Tables);
+                                padding: 20px;
+                                font-size: 16px;
+                                line-height: 22px;
+                                font-weight: 400;                                
+                                vertical-align: middle;
+                                text-align: left;                               
+
+                                .coins{        
+                                    color: var(--text-color);                              
+                                    display: flex;     
+                                    align-items: center;                               
+                                    
+                                    img{                                        
+                                        width: 30px;
+                                        height: 30px;
+                                        margin-right: 8px;
+                                    }
+
+                                    h6{
+                                            margin: 0;
+                                            margin-right: 10px;
+                                            font-weight: 400;
+                                            font-size: 18px;
+                                            line-height: 24px;
+                                    }
+
+                                    span{
+                                        font-size: 14px;
+                                        line-height: 17px;
+                                        background: var(--background-cart-abb);
+                                        border-radius: 5px;
+                                        padding: 5px 15px;
+                                        color: var(--color-cart-abb);
+                                    }
+                                }
+
+                                .percent{
+                                    display: flex;
+
+                                    img{
+                                        margin-left: 3px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
