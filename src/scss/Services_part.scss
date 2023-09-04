@@ -43,16 +43,16 @@
 
             .services-part{           
                 width: 25%;
-                padding: 0 15px;
-                margin-bottom: 30px;
+                padding: 15px 15px;                
+                background: var(--background-color2);                
 
-                .services-cart{
+                .services-cart{                    
                     background: var(--background-color);
                     border-color: #23262f;
                     box-shadow: var(--box-shadow-cart);
                     padding: 30px 25px;
                     border-radius: 10px;
-                    height: 100%;                    
+                    height: 100%;                 
 
                     .img-service{
                         margin-bottom: 30px;
