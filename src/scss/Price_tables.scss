@@ -5,11 +5,11 @@
     background: var(--background-color2);
 
     .container {
-        max-width: 1440px;
-        width: 100%;
-        margin: auto;
-        padding-right: 15px;
+        max-width: 1440px;        
+        margin: 0 auto;
         padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
 
         .heading{                        
             text-align: center;
@@ -149,6 +149,26 @@
                                         margin-left: 3px;
                                     }
                                 }
+
+                                .btn{
+                                    background: #5367FF;
+                                    color: #fff;
+                                    position: relative;                                    
+                                    text-decoration: none;
+                                    padding: 19px 40px;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    font-weight: 400;
+                                    cursor: pointer;
+                                    border: 1px solid #5367FF;
+                                    border-radius: 10px;
+                                    transition: background-color 0.3s ease, color 0.3s ease;
+
+                                    &:hover {
+                                        background: transparent; 
+                                        color: #5367FF;                                        
+                                      }
+                                }                                
                             }
                         }
                     }

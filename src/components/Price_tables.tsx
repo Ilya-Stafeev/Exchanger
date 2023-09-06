@@ -146,7 +146,7 @@ const Price_tables = () => {
                     <div>{renderPriceChange(priceChanges.BTC)}</div>
                   </td>
                   <td>${marketCaps.BTC.toFixed(2)}</td>
-                  <td></td>                
+                  <td><a className='btn' href="">Exchange</a></td>                
                 </tr>
                 <tr>
                   <td>2</td>
@@ -162,7 +162,7 @@ const Price_tables = () => {
                     <div>{renderPriceChange(priceChanges.ETH)}</div>
                   </td>
                   <td></td>
-                  <td></td>  
+                  <td><a className='btn' href="">Exchange</a></td>  
                 </tr>
                 <tr>
                   <td>3</td>
@@ -178,7 +178,7 @@ const Price_tables = () => {
                     <div>{renderPriceChange(priceChanges.BCH)}</div>
                   </td>
                   <td></td>
-                  <td></td>  
+                  <td><a className='btn' href="">Exchange</a></td>  
                 </tr>
                 <tr>
                   <td>4</td>
@@ -194,7 +194,7 @@ const Price_tables = () => {
                     <div>{renderPriceChange(priceChanges.LTC)}</div>
                   </td>
                   <td></td>
-                  <td></td>  
+                  <td><a className='btn' href="">Exchange</a></td>  
                 </tr>
                 <tr>
                   <td>5</td>
@@ -210,7 +210,7 @@ const Price_tables = () => {
                     <div>{renderPriceChange(priceChanges.BNB)}</div>
                   </td>
                   <td></td>
-                  <td></td>  
+                  <td><a className='btn' href="">Exchange</a></td>  
                 </tr>
               </tbody>
             </table>

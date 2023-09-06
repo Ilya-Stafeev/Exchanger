@@ -3,9 +3,11 @@
     background: var(--background-color);
 
     .container {
-        max-width: 1440px;
-        width: 100%;
-        margin: auto;
+        max-width: 1440px;        
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
 
         .top-market_title{
             font-family: "Inter";
@@ -19,15 +21,13 @@
         }
 
         .rows{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px; 
             width: 100%;
-            display: flex;
-            justify-content: space-between;
 
             .row{
-                position: relative;
-                width: 25%;
-                padding-right: 15px;
-                padding-left: 15px;
+               position: relative;                
 
                 .card{
                     border: 1px solid var(--background-border-block);
@@ -84,6 +84,13 @@
                             font-style: normal;
                         }
 
+                        @media screen and (max-width: 768px) {
+                            .full_name{
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+
                         .abb_name{
                             background: var(--background-cart-abb);
                             border-radius: 5px;
@@ -91,6 +98,22 @@
                             color: var(--color-cart-abb);
                             font-family: "Inter";
                             font-style: normal;
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+
+                        @media screen and (max-width: 991px) {
+                            .abb_name{
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            .abb_name{
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
                         }
                     }
 
@@ -114,20 +137,64 @@
                             color: var(--title-color);
                         }
 
+                        @media screen and (max-width: 768px) {
+                            .price{
+                                font-size: 22px;
+                                line-height: 28px;
+                            }
+                        }
+
                         .changes{
                             display: flex;
                             font-family: "Inter";
                             font-weight: 500;
                             font-size: 18px;
-                            line-height: 24px;
+                            line-height: 24px;                        
 
                             img{
                                 margin-left: 3px;
                             }                            
                         }
+
+                        @media screen and (max-width: 768px) {
+                            .changes{
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+                        }
+
                     }
                 }
             }
+            @media screen and (min-width: 992px) and (max-width: 1200px) {
+                .row:nth-last-child(1) {
+                  grid-column-end: -2;
+                }
+            }
+
+            @media screen and (max-width: 1200px) {
+                .row{
+                    width: min(320px, 100%);
+                    margin: 0 auto;
+                }  
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            .rows{
+                grid-template-columns: repeat(3, 1fr);
+            }  
+        }
+
+        @media screen and (max-width: 991px) {
+            .rows{
+                grid-template-columns: repeat(2, 1fr);
+            }  
+        }
+
+        @media screen and (max-width: 575px) {
+            .rows{
+                grid-template-columns: repeat(1, 1fr);
+            }  
         }
     }
 }

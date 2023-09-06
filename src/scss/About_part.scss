@@ -4,9 +4,11 @@
     padding-bottom: 100px;
 
     .container{
-        max-width: 1440px;
-        width: 100%;
-        margin: auto;
+        max-width: 1440px;        
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
 
         .rows{
             display: flex;
