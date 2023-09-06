@@ -13,9 +13,7 @@
         .row{
             display: flex;            
             flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-
+            
             .contact-part-wrapper{
                 padding: 48px 60px;
                 display: flex;
@@ -61,7 +59,14 @@
                         font-family: "Inter", sans-serif;
                         font-size: 18px;
                         line-height: 24px;
-                        font-weight: 500;                                             
+                        font-weight: 500;   
+                        padding: 20px 0;      
+                        outline: none;     
+                        
+                        &::placeholder { // Псевдоэлемент для стилизации placeholder
+                            color: #fff; // Замените 'your-color' на желаемый цвет
+                        }
+                    
                     }
 
                     .contact-part-button{

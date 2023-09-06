@@ -36,14 +36,14 @@
         }
 
         .row{
-            display: flex;        
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 30px;
             margin-right: -15px;
             margin-left: -15px;
 
             .services-part{           
-                width: 25%;
-                padding: 15px 15px;                
+                width: 100%;                               
                 background: var(--background-color2);                
 
                 .services-cart{                    
