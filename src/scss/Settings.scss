@@ -1,0 +1,100 @@
+.settings{
+    padding-top: 124px;
+    
+    .container-fluid{
+        width: 100%;
+        
+
+        .row{
+            display: flex;           
+                            
+
+            .row1{
+                position: fixed;
+                padding: 0 15px;
+                width: 320px;
+                flex: unset;
+                max-width: unset;
+                height: 100%;
+                left: 0;
+                background: var(--background-color);
+
+                .left-buttons-group{
+                    padding: 29px 20px;
+
+                    .rows-btn{
+                        width: 100%;
+                        display: flex;
+                        border: 1px solid#fff;
+                        border-radius: 10px;
+
+                        .btn{
+                            width: 100%;
+                            padding: 5px 7px;
+                            display: flex;   
+                            text-align: center;                            
+                            color: #fff;
+                            cursor: pointer;
+                            font-size: 14px;
+                            line-height: 20px;
+                            border-radius: 10px;
+                            background: #5367ff;
+                        }
+                    }
+                }
+
+                .nav-tabs{
+                    .nav-item{
+                        .nav-link{
+                            transition: .3s all ease;
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            cursor: pointer;
+                            border-radius: 0 !important;
+                            padding: 10px 29px;
+                            color: #fff;
+                        }
+                        &:hover{
+                            background-color: #fff; 
+                        }
+                    }
+                }
+            }
+
+            .row2{              
+                width: calc(100% - 320px);
+                flex: unset;
+                max-width: unset;
+                padding: 15px;               
+                
+
+                .row{
+                    display: flex;                    
+                    flex-wrap: wrap;
+                    
+                    .row-container{
+                        margin-bottom: 0.5rem;
+                        width: 100%;
+
+                        .component{
+                            .settings-alert{
+                                transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                border-radius: 4px;
+                                box-shadow: none;
+                                background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+                                font-weight: 400;
+                                font-size: 0.875rem;
+                                line-height: 1.43;
+                                letter-spacing: 0.01071em;
+                                display: flex;
+                                padding: 16;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }           
+    }
+}

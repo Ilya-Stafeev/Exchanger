@@ -63,8 +63,8 @@
                         padding: 20px 0;      
                         outline: none;     
                         
-                        &::placeholder { // Псевдоэлемент для стилизации placeholder
-                            color: #fff; // Замените 'your-color' на желаемый цвет
+                        &::placeholder { 
+                            color: #fff; 
                         }
                     
                     }

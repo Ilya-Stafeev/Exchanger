@@ -47,18 +47,18 @@ const Navbar = () => {
           {/* Ссылки для больших экранов */}
           <div className={`navbar-collapse ${menuOpen ? 'open' : ''}`}>
             <ul className="links">            
-                <li className='nav-item'>
-                  <a href="#">Exchange</a>
-                </li>
-                <li className='nav-item'>
-                  <a href="#">Options</a>
-                </li>
-                <li className='nav-item'>
-                  <a href="#">Staking</a>
-                </li>
-                <li className='nav-item'>
-                  <a href="#">About Us</a>
-                </li>                  
+              <li className='nav-item'>
+                <Link to="/exchange">Exchange</Link>
+              </li>
+              <li className='nav-item'>
+                <Link to="/options">Options</Link>
+              </li>
+              <li className='nav-item'>
+                <Link to="/staking">Staking</Link>
+              </li>
+              <li className='nav-item'>
+                <Link to="/about-us">About Us</Link>
+              </li>               
             </ul>
           </div>          
             {/* Правая секция */}
@@ -78,21 +78,21 @@ const Navbar = () => {
               {/* Выподающие меню */}
               <div className={`navbar-collapse ${menuOpen ? 'open' : ''}`}>
                 <ul className="mobile-links">
-                <li className='nav-item-mob'>
-                    <a href="#">Wallets</a>
+                  <li className='nav-item-mob'>
+                    <Link to="/wallets">Wallets</Link>
                   </li>
                   <li className='nav-item-mob'>
-                    <a href="#">Exchange</a>
+                    <Link to="/exchange">Exchange</Link>
                   </li>
                   <li className='nav-item-mob'>
-                    <a href="#">Options</a>
+                    <Link to="/options">Options</Link>
                   </li>
                   <li className='nav-item-mob'>
-                    <a href="#">Staking</a>
+                    <Link to="/staking">Staking</Link>
                   </li>
                   <li className='nav-item-mob'>
-                    <a href="#">About Us</a>
-                  </li>                         
+                    <Link to="/about-us">About Us</Link>
+                  </li>           
                 </ul>
                 <button className="mobail-login-button">Login</button>
               </div>
