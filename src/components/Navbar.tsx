@@ -46,7 +46,10 @@ const Navbar = () => {
             </div>           
           {/* Ссылки для больших экранов */}
           <div className={`navbar-collapse ${menuOpen ? 'open' : ''}`}>
-            <ul className="links">            
+            <ul className="links">   
+              <li className='nav-item'>
+                <Link to="/wallets">Wallets</Link>
+              </li>         
               <li className='nav-item'>
                 <Link to="/exchange">Exchange</Link>
               </li>

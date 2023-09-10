@@ -1,95 +1,284 @@
 .settings{
-    padding-top: 124px;
+    padding-top: 134px;
+    background: var(--background-color);
     
     .container-fluid{
+        max-width: 1440px;
         width: 100%;
-        
+        margin: auto;
 
         .row{
-            display: flex;           
-                            
-
-            .row1{
-                position: fixed;
+            display: flex;                  
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 1px solid #fff;          
+                  
+            .row1{                
                 padding: 0 15px;
-                width: 320px;
-                flex: unset;
-                max-width: unset;
-                height: 100%;
-                left: 0;
-                background: var(--background-color);
+                width: 320px;        
+                background: #0d151d;     
+                border-radius: 10px;          
 
-                .left-buttons-group{
-                    padding: 29px 20px;
+                .row1-fixed{
+                    position: fixed;
+                    height: 100%;
+                    width: 320px;
 
-                    .rows-btn{
-                        width: 100%;
-                        display: flex;
-                        border: 1px solid#fff;
-                        border-radius: 10px;
+                    .left-buttons-group{
+                        padding: 29px 20px;
 
-                        .btn{
+                        .rows-btn{
                             width: 100%;
-                            padding: 5px 7px;
-                            display: flex;   
-                            text-align: center;                            
-                            color: #fff;
-                            cursor: pointer;
-                            font-size: 14px;
-                            line-height: 20px;
-                            border-radius: 10px;
-                            background: #5367ff;
+                            display: flex;
+
+                            .btn{        
+                                width: 33%;                        
+                                border: 1px solid#fff !important;                                
+                                background-color: #5367FF;
+                                color: #fff;        
+                                cursor: pointer;
+                                font-size: 15px;
+                                line-height: 20px;
+                                font-weight: 400;
+                                font-family: Inter;
+                                font-style: normal;
+                                transition:  transform 0.7s ease;
+                    
+                                &:hover {
+                                    background-color: transparent; 
+                                    color: #5367FF;
+                                }
+                            }
                         }
                     }
-                }
 
-                .nav-tabs{
-                    .nav-item{
-                        .nav-link{
-                            transition: .3s all ease;
-                            display: flex;
-                            align-items: center;
-                            gap: 20px;
-                            cursor: pointer;
-                            border-radius: 0 !important;
-                            padding: 10px 29px;
-                            color: #fff;
-                        }
-                        &:hover{
-                            background-color: #fff; 
+                    .nav-tabs{
+                        .nav-item{
+                            list-style: none;
+                            .nav-link{
+                                transition: .3s all ease;
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                cursor: pointer;
+                                border-radius: 0;
+                                padding: 10px 29px;
+                                color: var(--text-color);                                
+                            }
+                            &:hover{
+                                background-color: var(--background-color); 
+                            }
                         }
                     }
                 }
             }
 
             .row2{              
-                width: calc(100% - 320px);
-                flex: unset;
-                max-width: unset;
-                padding: 15px;               
-                
+                width: calc(100% - 320px);                
+                padding: 15px;    
+                height: 1000px;            
 
-                .row{
+                .row2-component{
                     display: flex;                    
                     flex-wrap: wrap;
                     
-                    .row-container{
+                    .top-content{
                         margin-bottom: 0.5rem;
                         width: 100%;
 
                         .component{
                             .settings-alert{
                                 transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-                                border-radius: 4px;
-                                box-shadow: none;
+                                border-radius: 4px;                                
                                 background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
                                 font-weight: 400;
                                 font-size: 0.875rem;
-                                line-height: 1.43;
-                                letter-spacing: 0.01071em;
+                                line-height: 1.43;                                
                                 display: flex;
-                                padding: 16;
+                                padding: 16px;                               
+                                background: #cce5ff;
+                                border-color: #b8daff;
                                 align-items: center;
+                                margin-bottom: 10px;
+                                justify-content: space-between;
+
+                                .settings-alert-content{
+                                    .settings-alert-title{
+
+                                    }
+
+                                    .settings-alert-info{
+
+                                    }
+                                }
+
+                                .settings-alert-btn{
+
+                                }
+                            }
+                        }
+                    }
+
+                    .tab-content{
+                        width: 100%;
+                        background: var(--background-color2);
+                        .tab-wallet{
+                            .wallet-profile-card{
+                                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                border-radius: 2px;
+                                padding: 20px;
+                                border: 1px solid #e8eaf0;
+
+                                .title-wrapper{
+                                    border-bottom: 1px solid #e8eaf0;
+                                    padding-bottom: 20px;
+                                    margin-bottom: 20px;
+
+                                    .balances-my-title{
+                                        color: var(--title-color);
+                                        font-weight: 500;
+                                        line-height: 1;
+                                        font-size: 28px;
+                                    }
+                                }
+
+                                .balances-wrapper{                                    
+                                    .profile-card{
+                                        list-style: none;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        width: min(510px, 100%);
+                                        gap: 10px;
+                                        flex-wrap: wrap;
+
+                                        .profile-list{
+                                            background: #e6e7e9;                                            
+                                            border-radius: 2px;
+                                            padding: 16px 20px 20px 20px;
+                                            width: min(200px, 100%);  
+                                            
+                                            .profile-list-header{
+                                                font-size: 18px;
+                                                line-height: 24px;
+                                                font-weight: 500;                                               
+                                                color: #090A0D;
+                                                margin-bottom: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .currency-table{   
+                        width: 100%;                     
+                        background-color: var(--background-color2); 
+                        text-align: left;
+
+                        thead{
+                            tr{         
+                                                      
+                                th{
+                                    border: none;
+                                    font-size: 14px;
+                                    padding: 16px 20px;
+                                    color: var(--text-color);
+                                    font-weight: 400;
+                                    border-bottom: 1px solid #e6e6e6; 
+                                }
+                            }
+                        }
+
+                        tbody{
+                            tr{
+                                td{
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    font-weight: 400;                                    
+                                    vertical-align: middle;
+                                    padding: 16px 20px;
+                                    border-bottom: 1px solid #e6e6e6;                                    
+                                }
+                                
+                                .wallet-coin{                                        
+                                    .coin-info{  
+                                        display: flex;                                                                                    
+                                        .icon{
+                                            height: 30px;
+                                            width: 30px;
+                                            margin-right: 8px;
+                                            background: url(../assets/btc.svg) no-repeat;
+                                        }
+
+                                        .currency-pair{
+                                            color: var(--title-color);    
+                                            margin: auto 0;                                        
+                                        }
+
+                                        .pricing-title{
+                                            color: var(--text-color);                                            
+                                            font-size: 14px;
+                                            line-height: 17px;
+                                            font-weight: 400;  
+                                            margin: auto 8px;               
+                                        }
+                                    }
+                                }
+
+                                .wallet-qty-cell{
+                                    color: var(--title-color); 
+                                }
+
+                                .wallet-usd-cell{
+                                    color: var(--title-color); 
+                                }
+
+                                .wallet-action-cell{
+                                    button{
+                                        border: 1px solid#5367FF !important;
+                                        padding: 10px 20px;
+                                        background-color: #5367FF;
+                                        color: #fff;          
+                                        border-radius: 10px;
+                                        cursor: pointer;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        font-weight: 400;
+                                        font-family: Inter;
+                                        font-style: normal;
+                                        transition:  transform 0.7s ease;
+                            
+                                        &:hover {
+                                            background-color: transparent; 
+                                            color: #5367FF;
+                                        }
+                            
+                                        &:active {
+                                            transform: translateY(4px);
+                                            border-width: 4px;
+                                        }
+                                        
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            top: -5px;
+                                            left: -3px;
+                                            right: -3px;
+                                            bottom: 1px;
+                                            border: 3px solid var(--background-button-mobail);
+                                            border-radius: 10px;
+                                            transition: opacity 0.5s ease, transform 0.7s ease;
+                                            opacity: 0;
+                                            pointer-events: none;
+                                        }
+                                        
+                                        &:active::after {
+                                            opacity: 1;
+                                            transform: translateY(4px);
+                                        }          
+                                    }                                    
+                                }
                             }
                         }
                     }
