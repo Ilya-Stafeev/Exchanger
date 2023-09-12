@@ -5,10 +5,10 @@ const Exchange_part = () => {
         <section className='exchange'>
             <div className="conatainer">
                 <div className="exchange-section">
-                    <div className='title'>Buy and Sell Coins at the Crypto with minimal fees</div>
+                    <div className='title'>Buy and Sell Coins at <br /> the Crypto with <br /> minimal fees</div>
                     <span className='text'>We take minimal fees, its only 1%</span>
                     <div className='coin-exchange'></div>
-                    <button className='conduct-exchange'>exchange now</button>
+                    <a className='conduct-exchange'>exchange now</a>
                 </div>
             </div>
         </section>
