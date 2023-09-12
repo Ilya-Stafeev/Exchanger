@@ -8,6 +8,7 @@ import Contact_part from './Contact_part';
 import Reviews from './Reviews';
 import Section_sale from './Section_sale';
 import Settings from './Settings';
+import Exchange_part from './Exchange_part';
 
 export{
     Navbar,
@@ -20,4 +21,5 @@ export{
     Reviews,
     Section_sale,
     Settings,
+    Exchange_part,
 }

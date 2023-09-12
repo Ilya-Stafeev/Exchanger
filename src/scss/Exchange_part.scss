@@ -1,0 +1,48 @@
+.exchange{
+    background-image: url(../assets/exchange.png);  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    width: 100%;
+    height: calc(100vh - 124px); /* Высота - 124px */
+    margin-top: 124px;    
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* Затемнение с полупрозрачным черным цветом */
+        z-index: 1; /* Затемнение будет поверх фонового изображения */
+    }
+
+    .conatainer{
+        padding: 100px 120px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        .exchange-section{            
+            .title{
+
+            }
+
+            .text{
+                
+            }
+
+            .coin-exchange{
+                
+            }
+
+            .conduct-exchange{
+                
+            }
+        }
+    }
+}
