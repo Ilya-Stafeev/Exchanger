@@ -4,31 +4,34 @@
     background-position: center center;
     background-size: cover; 
     width: 100%;
-    height: calc(100vh - 124px); /* Высота - 124px */
-    margin-top: 124px;    
+    height: calc(100vh - 124px); 
+    margin-top: 124px;   
+    z-index: -100; 
     
-    &::before {
-        content: "";
+    &::before {        
+        content: "";        
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.6); /* Затемнение с полупрозрачным черным цветом */
-        z-index: 1; /* Затемнение будет поверх фонового изображения */
+        margin-top: 124px;
+        height: calc(100vh - 124px);
+        background-color: rgba(0, 0, 0, 0.6); 
+        z-index: 1; 
     }
 
-    .conatainer{
-        padding: 100px 400px;
+    .conatainer{        
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: calc(100vh - 124px);
         
 
-        .exchange-section{     
+        .exchange-section{                
             z-index: 1;       
+
             .title{
                 color: #fff;
                 font-size: 50px;
@@ -45,41 +48,123 @@
                 word-spacing: 2px;
             }
 
-            .coin-exchange{
-                width: 30px;
-                height: 40px;
+            .coin-exchange{      
+                display: flex;          
+                text-align: center;
+                margin: 40px 0;
+
+                input{
+                    background: #121318;
+                    border: none; 
+                    outline: none;
+                    color: #545766;
+                    font-size: 15px;
+                    font-weight: 600;
+                    padding: 15px;                    
+                }
+
+                input[type="number"]::-webkit-inner-spin-button,
+                input[type="number"]::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    appearance: none;
+                }
+
+                .equal{            
+                    font-size: 45px;
+                    font-weight: 400;
+                    margin: 0 10px;
+                    color: #545766;
+                    align-items: center;
+                }
+
+                .select{
+                    display: inline-block;
+                    background: #121318;                    
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: flex;
+
+                    .currency{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        i{
+                            width: 25px;
+                            height: 25px;                  
+                            margin-right: 5px;                            
+                            background-size: cover;
+                            box-sizing: border-box;
+                        }
+
+                        .icon-btc{
+                            background: url(../assets/btc.svg) no-repeat;
+                        }
+
+                        b{
+                            color: #545766;
+                        }
+                    }
+
+                    .arrow{
+                        margin-left: 5px;
+                        display: flex;
+                        align-items: center;
+                        font-size: 16px;
+                        color: #545766;
+
+                        svg{
+                            
+                        }
+                    }
+                }
             }
 
-            .conduct-exchange{
-                width: 100%;
-                margin: 0 auto;
-                text-decoration: none;
-                color: var(--text-color);
+            .conduct-exchange{               
+                padding: 20px 40px;                      
+                border: 1px solid transparent;                     
+                background-color: #5367FF;
+                color: #fff;        
+                cursor: pointer;
+                font-size: 15px;
+                line-height: 20px;
+                font-weight: 400;
                 font-family: Inter;
-                font-size: 16px;
                 font-style: normal;
-                font-weight: 400;     
-                background-color: #5367ff;           
-                
-                &:before {
-                    content: "";
-                    position: absolute;
-                    top: 68px;
-                    width: 0%;
-                    left: 50%;
-                    height: 1px;
-                    background-color: #5367ff;
-                    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
-                    transform: translateX(-50%);
-                }
+                transition:  transform 0.7s ease;  
+                text-transform: uppercase;    
+                border-radius: 10px;                
                     
                 &:hover {
                     color: #5367ff;
-                        
-                    &:before {
-                        width: 100%;          
-                    }
+                    border: 1px solid #5367ff;
+                    background: transparent;         
                 }
+
+                &:active {
+                    transform: translateY(4px);
+                    border-width: 4px;
+                }
+                  
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -5px;
+                    left: -3px;
+                    right: -3px;
+                    bottom: 1px;
+                    border: 3px solid var(--background-button-mobail);
+                    border-radius: 10px;
+                    transition: opacity 0.5s ease, transform 0.7s ease;
+                    opacity: 0;
+                    pointer-events: none;
+                }
+                
+                &:active::after {
+                opacity: 1;
+                transform: translateY(4px);
+                }          
             }
         }
     }

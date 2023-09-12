@@ -52,13 +52,7 @@ const Navbar = () => {
               </li>         
               <li className='nav-item'>
                 <Link to="/exchange">Exchange</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to="/options">Options</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to="/staking">Staking</Link>
-              </li>
+              </li>              
               <li className='nav-item'>
                 <Link to="/about-us">About Us</Link>
               </li>               
@@ -86,13 +80,7 @@ const Navbar = () => {
                   </li>
                   <li className='nav-item-mob'>
                     <Link to="/exchange">Exchange</Link>
-                  </li>
-                  <li className='nav-item-mob'>
-                    <Link to="/options">Options</Link>
-                  </li>
-                  <li className='nav-item-mob'>
-                    <Link to="/staking">Staking</Link>
-                  </li>
+                  </li>                  
                   <li className='nav-item-mob'>
                     <Link to="/about-us">About Us</Link>
                   </li>           
