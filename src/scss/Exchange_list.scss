@@ -1,4 +1,4 @@
-.top_market{
+.coins{
     padding: 100px 0;
     background: var(--background-color);
     z-index: 1000;
@@ -61,6 +61,142 @@
 
                         .icon-ltc{
                             background: url(../assets/ltc.svg) no-repeat;
+                        }
+
+                        .icon-XMR{
+                            background: url(../assets/xmr.svg) no-repeat;
+                        }
+
+                        .icon-IOTA{
+                            background: url(../assets/iota.svg) no-repeat;
+                        }
+
+                        .icon-BNB{
+                            background: url(../assets/bnb.svg) no-repeat;
+                        }
+
+                        .icon-XLM{
+                            background: url(../assets/xlm.svg) no-repeat;
+                        }
+
+                        .icon-ADA{
+                            background: url(../assets/ada.svg) no-repeat;
+                        }
+
+                        .icon-TRX{
+                            background: url(../assets/trx.svg) no-repeat;
+                        }
+
+                        .icon-XTZ{
+                            background: url(../assets/xtz.svg) no-repeat;
+                        }
+
+                        .icon-NEO{
+                            background: url(../assets/neo.svg) no-repeat;
+                        }
+
+                        .icon-XEM{
+                            background: url(../assets/xem.svg) no-repeat;
+                        }
+
+                        .icon-XRP{
+                            background: url(../assets/xrp.svg) no-repeat;
+                        }
+
+                        .icon-EOS{
+                            background: url(../assets/eos.svg) no-repeat;
+                        }
+
+                        .icon-DOGE{
+                            background: url(../assets/doge.svg) no-repeat;
+                        }
+
+                        .icon-DOT{
+                            background: url(../assets/dot.svg) no-repeat;
+                        }
+
+                        .icon-UNI{
+                            background: url(../assets/uni.svg) no-repeat;
+                        }                        
+
+                        .icon-CAKE{
+                            background: url(../assets/cake.svg) no-repeat;
+                        }
+
+                        .icon-SHIB{
+                            background: url(../assets/shib.svg) no-repeat;
+                        }
+
+                        .icon-BUSD{
+                            background: url(../assets/busd.svg) no-repeat;
+                        }
+
+                        .icon-USDC{
+                            background: url(../assets/usds.svg) no-repeat;
+                        }
+
+                        .icon-MATIC{
+                            background: url(../assets/matic.svg) no-repeat;
+                        }
+
+                        .icon-LINK{
+                            background: url(../assets/link.svg) no-repeat;
+                        }
+
+                        .icon-ATOM{
+                            background: url(../assets/atom.svg) no-repeat;
+                        }
+
+                        .icon-DAI{
+                            background: url(../assets/dai.svg) no-repeat;
+                        }
+
+                        .icon-TON{
+                            background: url(../assets/ton.svg) no-repeat;
+                        }
+
+                        .icon-LEO{
+                            background: url(../assets/leo.svg) no-repeat;
+                        }
+
+                        .icon-MKR{
+                            background: url(../assets/mkr.svg) no-repeat;
+                        }
+
+                        .icon-AVAX{
+                            background: url(../assets/avax.svg) no-repeat;
+                        }
+
+                        .icon-WBTC{
+                            background: url(../assets/wbtc.svg) no-repeat;
+                        }
+
+                        .icon-ARB{
+                            background: url(../assets/arb.svg) no-repeat;
+                        }
+
+                        .icon-VET{
+                            background: url(../assets/vet.svg) no-repeat;
+                        }
+
+                        .icon-AXS{
+                            background: url(../assets/axs.svg) no-repeat;
+                        }
+
+                        .icon-INJ{
+                            background: url(../assets/inj.svg) no-repeat;
+                        }
+
+                        .icon-APE{
+                            background: url(../assets/ape.svg) no-repeat;
+                        }
+
+                        .icon-RPL{
+                            background: url(../assets/rpl.svg) no-repeat;
+                        }
+
+                        .icon-COMP{
+                            background: url(../assets/comp.svg) no-repeat;
                         }
 
                         .full_name{
@@ -154,12 +290,7 @@
 
                     }
                 }
-            }
-            @media screen and (min-width: 992px) and (max-width: 1200px) {
-                .row:nth-last-child(1) {
-                  grid-column-end: -2;
-                }
-            }
+            }          
 
             @media screen and (max-width: 1200px) {
                 .row{
