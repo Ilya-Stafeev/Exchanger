@@ -3,27 +3,35 @@ import '../scss/Exchange_part.scss';
 
 const Exchange_part: React.FC = () => {
     useEffect(() => {
-      const dropdown = document.querySelector('.dropdown') as HTMLElement | null;
-      if (!dropdown) return;
-  
-      dropdown.addEventListener('click', () => {
-        dropdown.classList.toggle('active');
-      });
-  
-      const menuItems = document.querySelectorAll('.menu li') as NodeListOf<HTMLElement>;
-      menuItems.forEach((item) => {
-        item.addEventListener('click', () => {
-          const text = item.querySelector('b')?.textContent;
-          if (text) {
-            const selected = dropdown.querySelector('.selected b') as HTMLElement | null;
-            if (selected) {
-              selected.textContent = text;
-              dropdown.classList.remove('active');
+        const dropdown = document.querySelector('.dropdown') as HTMLElement | null;
+        if (!dropdown) return;
+    
+        dropdown.addEventListener('click', (event) => {
+          event.stopPropagation();
+          dropdown.classList.toggle('active');
+        });
+    
+        const menuItems = document.querySelectorAll('.menu li') as NodeListOf<HTMLElement>;
+        menuItems.forEach((item) => {
+          item.addEventListener('click', () => {
+            const text = item.querySelector('b')?.textContent;
+            if (text) {
+              const selected = dropdown.querySelector('.selected b') as HTMLElement | null;
+              if (selected) {
+                selected.textContent = text;
+                dropdown.classList.remove('active');
+              }
             }
+          });
+        });
+    
+        document.addEventListener('click', (event) => {
+          if (!dropdown.contains(event.target as Node)) {
+            dropdown.classList.remove('active');
           }
         });
-      });
-    }, []);  
+      }, []);
+     
 
     return (
         <section className='exchange'>
