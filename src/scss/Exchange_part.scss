@@ -69,56 +69,99 @@
                     appearance: none;
                 }
 
+                .dropdown {
+                    position: relative;  
+                    background: #121318;                                      
+                  
+                    .select {
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;                      
+                      padding: 10px;
+                      border: none;
+                      cursor: pointer;
+                  
+                      .selected {
+                        display: flex;
+                        align-items: center;
+                  
+                        i {
+                          width: 25px;
+                          height: 25px;
+                        }
+                        
+                        .icon-btc{
+                            background: url(../assets/btc.svg) no-repeat;
+                        }                       
+
+                        b {
+                          margin-left: 10px; 
+                        }
+                      }
+                  
+                      .caret {
+                        
+                      }
+                    }
+                  
+                    .menu {
+                      position: absolute;
+                      top: 100%;
+                      left: 0;
+                      width: 100%;
+                      background-color: #fff;
+                      border: 1px solid #ccc;
+                      list-style: none;
+                      padding: 0;
+                      display: none;
+                  
+                      li {
+                        padding: 10px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                  
+                        &:hover {
+                          background-color: #f1f1f1; 
+                        }
+                  
+                        i {
+                          width: 20px; 
+                          height: 20px; 
+                          margin-right: 10px; 
+                          
+                        }
+                        
+                        .icon-btc{
+                            background: url(../assets/btc.svg) no-repeat;
+                        }     
+
+                        .icon-eth{
+                            background: url(../assets/eth.svg) no-repeat;
+                        }
+
+                        .icon-bch{
+                            background: url(../assets/bch.svg) no-repeat;
+                        }
+
+                        b {
+                          
+                        }
+                      }
+                    }                  
+                    
+                    &.active .menu {
+                      display: block;
+                    }
+                  }
+                
                 .equal{            
                     font-size: 45px;
                     font-weight: 400;
                     margin: 0 10px;
                     color: #545766;
                     align-items: center;
-                }
-
-                .select{
-                    display: inline-block;
-                    background: #121318;                    
-                    padding: 5px 10px;
-                    border-radius: 4px;
-                    cursor: pointer;
-                    display: flex;
-
-                    .currency{
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-
-                        i{
-                            width: 25px;
-                            height: 25px;                  
-                            margin-right: 5px;                            
-                            background-size: cover;
-                            box-sizing: border-box;
-                        }
-
-                        .icon-btc{
-                            background: url(../assets/btc.svg) no-repeat;
-                        }
-
-                        b{
-                            color: #545766;
-                        }
-                    }
-
-                    .arrow{
-                        margin-left: 5px;
-                        display: flex;
-                        align-items: center;
-                        font-size: 16px;
-                        color: #545766;
-
-                        svg{
-                            
-                        }
-                    }
-                }
+                }                
             }
 
             .conduct-exchange{               

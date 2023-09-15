@@ -102,7 +102,7 @@ function Exchange_list() {
     );
   };
   return (
-    <section className="coins">
+    <section className="coins-part">
       <div className="container">        
         <div className="rows">
           <div className="row">
