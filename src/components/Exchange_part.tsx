@@ -1,37 +1,46 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../scss/Exchange_part.scss';
 
 const Exchange_part: React.FC = () => {
+    const [isActive, setIsActive] = useState(false);
+    const [selectedItem, setSelectedItem] = useState({ text: 'BTC', iconClass: 'icon-btc' });
+
     useEffect(() => {
         const dropdown = document.querySelector('.dropdown') as HTMLElement | null;
         if (!dropdown) return;
-    
-        dropdown.addEventListener('click', (event) => {
-          event.stopPropagation();
-          dropdown.classList.toggle('active');
-        });
-    
+
         const menuItems = document.querySelectorAll('.menu li') as NodeListOf<HTMLElement>;
+
+        const handleDropdownClick = () => {
+        setIsActive(!isActive);
+        };
+
+        const handleMenuItemClick = (item: HTMLElement) => {
+        const text = item.querySelector('b')?.textContent;
+        const iconClass = item.querySelector('i')?.className || '';
+        if (text) {
+            setSelectedItem({ text, iconClass });
+            setIsActive(false);
+        }
+        };
+
+        dropdown.addEventListener('click', (event) => {
+        event.stopPropagation();
+        handleDropdownClick();
+        });
+
         menuItems.forEach((item) => {
-          item.addEventListener('click', () => {
-            const text = item.querySelector('b')?.textContent;
-            if (text) {
-              const selected = dropdown.querySelector('.selected b') as HTMLElement | null;
-              if (selected) {
-                selected.textContent = text;
-                dropdown.classList.remove('active');
-              }
-            }
-          });
+        item.addEventListener('click', () => {
+            handleMenuItemClick(item);
         });
-    
+        });
+
         document.addEventListener('click', (event) => {
-          if (!dropdown.contains(event.target as Node)) {
-            dropdown.classList.remove('active');
-          }
+        if (!dropdown.contains(event.target as Node)) {
+            setIsActive(false);
+        }
         });
-      }, []);
-     
+    }, [isActive]);
 
     return (
         <section className='exchange'>
@@ -41,11 +50,11 @@ const Exchange_part: React.FC = () => {
                     <span className='text'>We take minimal fees, its only 1%</span>
                     <div className='coin-exchange'>
                         <input type="number" min="0"/>
-                        <div className='dropdown'>
+                        <div className={`dropdown ${isActive ? 'active' : ''}`}>
                             <div className="select">
                                 <span className="selected">
-                                    <i className='icon-btc'></i>
-                                    <b>BTC</b>
+                                    <i className={selectedItem.iconClass}></i>
+                                    <b>{selectedItem.text}</b>
                                 </span>
                                 <div className="caret"></div>
                             </div>
