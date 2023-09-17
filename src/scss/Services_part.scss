@@ -35,50 +35,60 @@
             }
         }
 
-        .row{
+        .row{            
             display: grid;
-            grid-template-columns: repeat(4, 1fr); 
-            gap: 30px;
-            margin-right: -15px;
-            margin-left: -15px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;           
+            align-items: stretch; 
+              
+            .services-cart {
+                background: var(--background-color);
+                border-color: #23262f;
+                box-shadow: var(--box-shadow-cart);
+                padding: 30px 25px;
+                border-radius: 10px;                                     
 
-            .services-part{           
-                width: 100%;                               
-                background: var(--background-color2);                
+                .img-service{
+                    margin-bottom: 30px;
+                }
 
-                .services-cart{                    
-                    background: var(--background-color);
-                    border-color: #23262f;
-                    box-shadow: var(--box-shadow-cart);
-                    padding: 30px 25px;
-                    border-radius: 10px;
-                    height: 100%;                 
+                .service-content{
+                    font-family: "Inter";
+                    font-style: normal;  
 
-                    .img-service{
-                        margin-bottom: 30px;
+                    .service-title{
+                        font-size: 19px;
+                        line-height: 23px;                           
+                        margin-bottom: 10px;
+                        font-weight: 500;
+                        color: var(--title-color);
                     }
 
-                    .service-content{
-                        font-family: "Inter";
-                        font-style: normal;  
-
-                        .service-title{
-                            font-size: 19px;
-                            line-height: 23px;                           
-                            margin-bottom: 10px;
-                            font-weight: 500;
-                            color: var(--title-color);
-                        }
-
-                        .service-subtitle{
-                            color: #9295A6;
-                            font-size: 18px;
-                            line-height: 24px; 
-                            font-weight: 400;
-                        }
+                    .service-subtitle{
+                        color: #9295A6;
+                        font-size: 18px;
+                        line-height: 24px; 
+                        font-weight: 400;
                     }
                 }
             }
+        }
+        @media screen and (max-width: 991px) {
+            .row {
+                grid-template-columns: repeat(3, 1fr);               
+            }            
+        }
+
+        @media screen and (max-width: 768px) {
+            .row {
+                grid-template-columns: repeat(2, 1fr);
+            }  
+        }        
+
+        @media screen and (max-width: 576px) {
+            .row {
+                grid-template-columns: repeat(1, 1fr);
+            }  
         }
     }   
 }

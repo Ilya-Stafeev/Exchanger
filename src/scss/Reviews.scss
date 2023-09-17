@@ -1,47 +1,123 @@
-.reviews{
+.reviews {
     padding-top: 60px;
     padding-bottom: 80px;
     background: var(--background-color2);
-
-    .container{
-        max-width: 1440px;        
-        margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        box-sizing: border-box;
-
-        .slider-title{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 57px;
-
-            .heading{
-                color: var(--text-color);
-                font-size: 48px;
-                line-height: 65px;
-                font-weight: 600;
-                font-family: "Inter";
-                font-style: normal;
-                margin-bottom: 0.5rem;
-            }
-
-            .slider-controls{
-                display: flex;
-                gap: 16px;
-                
-                .slider-control{
-                    background: var(--background-color);
-                    width: 40px;
-                    height: 40px;
-                    border: none;
-                    padding: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 10px;
-                }
-            }
+  
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      box-sizing: border-box;
+  
+      .slider-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 57px;
+  
+        .heading {
+          color: var(--text-color);
+          font-size: 48px;
+          line-height: 65px;
+          font-weight: 600;
+          font-family: "Inter";
+          font-style: normal;
+          margin-bottom: 0.5rem;
         }
-    }
+  
+        .slider-controls {
+          display: flex;
+          gap: 16px;
+  
+          .slider-control {
+            background: var(--background-color);
+            width: 40px;
+            height: 40px;
+            border: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+  
+        .slider-wrapper {
+            display: flex;
+            justify-content: space-between;        
+            
+            .slick-slider {
+                position: relative;
+                width: 100%;
+        
+                .slick-list {
+                position: relative;
+                display: block;
+                overflow: hidden;              
+        
+                    .slick-track {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: stretch;
+
+                        .slick-slide {                            
+                            transition: transform 0.5s ease-in-out;                   
+                            background-color: var(--background-color);                    
+                            border-radius: 30px;
+                            padding: 40px;
+                            margin: 0 5px;                            
+
+                            .slide-title-wrapper{
+                                margin-bottom: 2rem;
+                                .slide-title{
+                                    color: var(--title-color);
+                                    font-size: 23px;
+                                    line-height: 28px;
+                                    font-weight: 500;
+                                    margin-bottom: 0.5rem;
+                                }
+
+                                .slide-subtitle{
+                                    color: var(--text-color);                            
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                    font-weight: 400;
+                                }
+                            }
+
+                            .slide-bottom-wrapper{
+                                display: flex;
+                                gap: 8px;
+                                align-items: center;
+                                .slide-user-info-img{
+                                    
+                                }
+
+                                .slide-user-info{
+                                    .slide-user-info-title{
+                                        margin-bottom: 3px;
+                                        font-size: 19px;
+                                        line-height: 23px;
+                                        font-weight: 500;
+                                        color: var(--title-color);
+                                    }
+
+                                    .slide-user-info-date{
+                                        color: var(--text-color);
+                                        font-size: 13px;
+                                        line-height: 20px;
+                                        font-weight: 400;
+                                    }
+                                }
+                            }                       
+                        }
+                    }
+                }    
+            }     
+        }
+    }  
 }
+  

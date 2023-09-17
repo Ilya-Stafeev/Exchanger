@@ -34,6 +34,11 @@ import support from './support.svg';
 import right_arrow from './right-arrow.svg';
 import left_arrow from './left-arrow.svg';
 
+import F from './F.svg';
+import S from './S.svg';
+import E from './E.svg';
+import J from './J.svg';
+
 export {
     logo,
     lightIcon,
@@ -70,4 +75,9 @@ export {
 
     right_arrow,
     left_arrow,
+
+    F,
+    S,
+    E,
+    J,
   };

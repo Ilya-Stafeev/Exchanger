@@ -12,7 +12,7 @@
 
         .row{
             display: flex;            
-            flex-wrap: wrap;
+            flex-wrap: wrap;           
             
             .contact-part-wrapper{
                 padding: 48px 60px;
@@ -33,7 +33,13 @@
                         line-height: 47px;
                         font-family: "Inter";
                         font-style: normal;
-                    }                    
+                    }   
+                    
+                    @media screen and (max-width: 576px) {
+                        .contact-part-subtitle {
+                            margin: 0;
+                        }  
+                    }
 
                     .contact-part-subtitle{
                         font-size: 18px;
@@ -56,8 +62,20 @@
                             line-height: 20px;
                         }  
                     }
+                } 
+                
+                @media screen and (max-width: 991px) {
+                    .contact-part-left {
+                        margin-bottom: 30px;          
+                    }  
+                }
 
-                }               
+                @media screen and (max-width: 576px) {
+                    .contact-part-left {
+                        margin-bottom: -30px;  
+                        margin-top: -30px;         
+                    }  
+                }
 
                 .contact-part-right{
                     display: flex;
@@ -87,9 +105,22 @@
                         
                         }
 
+                        @media screen and (max-width: 576px) {
+                            .contact-part-field {
+                                height: 26px;
+                                padding: 0;
+                            }  
+                        }
+
                         @media screen and (max-width: 768px) {
                             .contact-part-field {
                                 width: auto;
+                            }  
+                        }
+
+                        @media screen and (max-width: 576px) {
+                            .contact-part-field {
+                                margin: 0;
                             }  
                         }
 
@@ -122,11 +153,18 @@
                            height: 46px;                           
                         }  
                     }
-                }
+
+                    @media screen and (max-width: 576px) {
+                        form {
+                           flex-direction: column; 
+                           gap: 20px;                         
+                        }  
+                    }
+                }                
 
                 @media screen and (max-width: 991px) {
-                    .contact-part-left {
-                        margin-bottom: 30px;          
+                    .contact-part-right {
+                        width: 100%;                               
                     }  
                 }
             }
@@ -138,6 +176,13 @@
                     justify-content: center;                                     
                 }  
             }
-        }
+
+            @media screen and (max-width: 576px) {
+                .contact-part-wrapper {
+                    padding: 15px;  
+                    height: 300px;                                  
+                }  
+            }
+        }       
     }
 }
