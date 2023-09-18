@@ -1,11 +1,12 @@
-.Section-sale{    
+.section-sale{    
     padding: 34px 0;
     background:  url(../assets/bg-sale-1.png) no-repeat, var(--background-Section_sale);
+    background-size: cover;    
 
     .container{
         max-width: 1440px;
         width: 100%;
-        margin: auto;
+        margin: auto;          
 
         .row{
             display: flex;    
@@ -17,12 +18,28 @@
                 padding-left: 15px;
                 
                 .heading{
+                    font-size: 32px;
+                    color: #fff;
+                    text-transform: none;
+                    letter-spacing: -0.3px;
                     margin-bottom: 10px;
+                    font-weight: 700;
                 }
 
                 .desc{
+                    color: #fff;
+                    letter-spacing: 0;
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    line-height: 20px;
+                }                
 
-                }
+                @media screen and (max-width: 475px) {
+                    .desc{
+                        font-size: 12px;
+                        line-height: 18px;
+                    }  
+                }                
             }
 
             .row2{
@@ -35,6 +52,7 @@
                 button{
                     display: flex;
                     background: transparent;
+                    align-items: center;
                     border: none;
 
                     a{
@@ -50,10 +68,35 @@
                         font-size: 16px;
                         line-height: 22px;
                         color: #2B3144;
-                        transition: all 0.3s ease-in-out;                        
+                        transition: all 0.3s ease-in-out;    
+                        
+                        &:hover{
+                            background: #23262f;
+                            color: #fff;
+                        }
                     }
                 }
+            }   
+            
+            @media screen and (max-width: 768px) {
+                .row1{
+                    width: 96%;                    
+                }  
             }
+
+            @media screen and (max-width: 768px) {
+                .row2{
+                    margin-top: 10px;
+                    width: 100%;
+                    justify-content: flex-start;
+                }  
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .row{
+                flex-direction: column; 
+            }  
         }
     }
 }

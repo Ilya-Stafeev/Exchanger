@@ -2,7 +2,7 @@ import '../scss/Section_sale.scss';
 
 const Section_sale = () => {
     return (
-        <section className='Section-sale'>
+        <section className='section-sale'>
             <div className="container">
                 <div className="row">
                     <div className="row1">

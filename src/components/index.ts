@@ -10,6 +10,7 @@ import Section_sale from './Section_sale';
 import Settings from './Settings';
 import Exchange_part from './Exchange_part';
 import Exchange_list from './Exchange_list';
+import Footer from './Footer';
 
 export{
     Navbar,
@@ -24,4 +25,5 @@ export{
     Settings,
     Exchange_part,
     Exchange_list,
+    Footer,
 }
