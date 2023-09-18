@@ -1,4 +1,59 @@
 .Section-sale{    
     padding: 34px 0;
     background:  url(../assets/bg-sale-1.png) no-repeat, var(--background-Section_sale);
+
+    .container{
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
+
+        .row{
+            display: flex;    
+            width: 100%;
+
+            .row1{                
+                width: 60%;
+                padding-right: 15px;
+                padding-left: 15px;
+                
+                .heading{
+                    margin-bottom: 10px;
+                }
+
+                .desc{
+
+                }
+            }
+
+            .row2{
+                display: flex;
+                justify-content: flex-end;
+                width: 40%; 
+                padding-right: 15px;
+                padding-left: 15px;                 
+
+                button{
+                    display: flex;
+                    background: transparent;
+                    border: none;
+
+                    a{
+                        margin-top: 12px;
+                        padding: 13px 32px;
+                        background: #ffffff;
+                        border-radius: 90px;
+                        color: #23262f;
+                        display: inline-flex;
+                        text-decoration: none;
+                        cursor: pointer;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #2B3144;
+                        transition: all 0.3s ease-in-out;                        
+                    }
+                }
+            }
+        }
+    }
 }
