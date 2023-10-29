@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import '../scss/Navbar.scss';
+import './Navbar.scss';
 import { Link } from 'react-router-dom';
-import { logo } from '../assets';
-import { useTheme } from '../hooks/use-theme';
+import { logo } from '../../../assets';
+import { useTheme } from '../../../hooks/use-theme';
 
-const Navbar = () => {
+const Navbar = () => {  
   //Выподающие меню
   const [menuOpen, setMenuOpen] = useState(false);
 

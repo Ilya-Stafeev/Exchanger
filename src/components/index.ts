@@ -1,4 +1,4 @@
-import Navbar from './Navbar';
+import Navbar from './screen/navbar/Navbar';
 import Baner from './Baner';
 import Top_market from './Top_market';
 import Price_tables from './Price_tables';
